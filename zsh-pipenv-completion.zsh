@@ -8,7 +8,7 @@ function enable_completion {
   [ ! -e $COMP_DIR ] && mkdir $COMP_DIR
 
   if [ ! -e $COMP_FILE ]; then
-    pipenv --completion > $COMPDEF_FILE
+    pipenv --completion > $COMP_FILE
     [ -f $DUMP_FILE ] && rm $DUMP_FILE
   fi
 }
